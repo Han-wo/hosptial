@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url(common.css);
+
+#wrap{display: flex; flex-direction: column; width: 100%; min-height: 100vh; position: relative;}
+/* nav type */
+header{width: 100%; position: fixed; top: 0; height: 89px; z-index: 9999; background-color: #ffff; transition: 0.3s;}
+header.on{border-bottom: 1px solid rgb(201, 201, 201);transition: 0.3s;}
+header .nav-wrap{display: flex; justify-content: space-between; width: 100%; max-width: 1300px; margin: 0 auto; align-items: center; padding: 20px 0;}
+header .nav-wrap .logo h1{ font-size: 35px; font-family: 'Montserrat';}
+
+header .nav ul{display: flex; align-items: center;}
+header .nav ul li a{padding: 30px; font-size: 20px; font-family: 'Pretendard'; font-weight: 600; transition: 0.3s;}
+header .login ul{display: flex;}
+header .login ul li a{ padding: 10px; font-size: 17px; font-family: 'Pretendard';}
+header ul li:hover a{color:#A9A0FC}
+
+/* footer */
+footer{width: 100%; height: 150px;  background-color: rgb(240, 240, 240); margin-top: 100px;}
+footer .footer_in{display: flex; align-items: center; max-width: 1320px; margin: 50px auto 0;}
+footer .footer_in .logo{margin-right: 200px;}
+footer .footer_in .logo h1{ font-size: 35px; font-family: 'Montserrat'; color: rgb(133, 133, 133);}
+footer .footer_in p{font-family: 'Pretendard'; font-size: 16px; color: rgb(102, 102, 102);}
+footer .footer_in .selection_wrap{display: flex; flex-direction: column; align-items: flex-end;  flex: 1;}
+footer .footer_in .selection_wrap select{width: 180px; }
+footer .footer_in .selection_wrap .sns ul{display: flex; margin-top: 10px;}
+footer .footer_in .selection_wrap .sns ul li{margin-left: 10px; width: 30px; height: 30px; background-color: #9b9b9b; border-radius: 50%; text-align: center; line-height: 1.6; transition: 0.3s;}
+footer .footer_in .selection_wrap .sns ul li a{font-size: 18px; color: rgb(255, 255, 255); }
+footer .footer_in .selection_wrap .sns ul li:hover{background-color: rgb(255, 255, 255);}
+footer .footer_in .selection_wrap .sns ul li:hover a{color: black;}
+footer .footer_in .information{display: flex; justify-content: flex-start; margin-bottom: 5px; margin-top: 5px;}
+footer .footer_in .information li a{padding: 0 10px;font-size: 15px; border-right: 1px solid #575555; font-family: 'Pretendard'; color: rgb(102, 102, 102);}
+footer .footer_in .information li:first-child a{padding-left: 0;}
+footer .footer_in .information li:last-child a{border: none;}
+
+/* main content */
+.main_content{margin-top: 89px;}
+.main_content .main-slide{width: 100%; height: 640px;}
+.main_content .main-slide .slide_img{position: relative; width: 100%; height: 640px; background-size: cover; }
+.main_content .main-slide .slide_img.img1{background: url(/resource/images/mainslide1.png)no-repeat center; background-blend-mode: multiply; background-color: rgba(0, 0, 0, 0.18);}
+.main_content .main-slide .slide_img.img2{background: url(/resource/images/mainslide2.png)no-repeat center; background-blend-mode: multiply; background-color: rgba(0, 0, 0, 0.18);}
+.main_content .main-slide .slide_img.img3{background: url(/resource/images/mainslide1.png)no-repeat center; background-blend-mode: multiply; background-color: rgba(0, 0, 0, 0.18);}
+.main_content .main-slide .slide_img .slide_txt{position: absolute; top: 50%; left: 30%; color: rgb(255, 255, 255); transform: translate(-50%, -50%);}
+.main_content .main-slide .slide_img .slide_txt h2{ font-size: 54px; font-family: 'Montserrat';}
+.main_content .main-slide .slide_img .slide_txt h1{ font-size: 65px; font-family: 'Montserrat'; margin-bottom: 20px;}
+.main_content .main-slide .slide_img .slide_txt a{padding: 10px 30px; border: 1px solid #fff; margin-left: 10px; font-family: 'Montserrat'; font-size: 15px;}
+.main_content .main-slide .slide_img .slide_txt a:hover{background-color: #fff; color: #000;}
+.swiper-horizontal > .swiper-pagination-progressbar{ top: unset; bottom: 22%; left: 28%; transform: translate(-50%, -50%); width: 300px; border-radius: 10px;}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background-color: #ffffff; border-radius: 10px;}
+
+.main_inner{max-width: 1320px; margin: 0 auto; margin-top: 100px;}
+.main_inner .inner_tit{display: flex; margin-bottom: 50px;  justify-content: center; position: relative;}
+.main_inner .inner_tit h1{font-size: 35px; font-family: 'Pretendard'; font-weight: 800;}
+.main_inner .inner_tit .input_wrap{border: 1px solid #999; position: absolute; right: 0;}
+.main_inner .inner_tit .input_wrap .noborder{border: none; outline: none;}
+.main_inner .inner_tit .input_wrap input[placeholder]{transition: 0.3s; opacity: 1;}
+.main_inner .inner_tit .input_wrap input[placeholder]:focus{opacity: 0;}
+.main_inner .inner_tit .input_wrap .fa-magnifying-glass{margin-right: 10px; cursor: pointer;}
+
+.main_inner .inner_grid_wrap{display: grid; text-align: center; grid-template-columns: repeat(5, 1fr); border-top: 1px solid #eaeaea; border-left: 1px solid #eaeaea;}
+.main_inner .inner_grid_wrap > div {border-right: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; padding: 20px 0; cursor: pointer;}
+.main_inner .inner_grid_wrap > div h3{transition: 0.2s; font-family: 'Pretendard';}
+.main_inner .inner_grid_wrap > div:hover h3{ color: #A9A0FC;}
+.main_inner .map_review .map_bx{flex: 1;}
+.main_inner .map_review{display: flex; justify-content: space-between; margin-top: 100px;}
+.main_inner .map_review .review_bx{flex: 1; margin-left: 30px; }
+.main_inner .map_review .review_bx .review_tit{display: flex; justify-content: space-between; }
+.main_inner .map_review .review_bx .review_tit h2{font-size: 24px; font-family: 'Pretendard'; margin-bottom: 20px;}
+.main_inner .map_review .review_bx .review_txt{display: flex;border-top: 1px solid #000;  border-bottom: 1px solid #000; flex-direction: column; justify-content: center; }
+.main_inner .map_review .review_bx .review_txt ul{padding: 20px 0; }
+.main_inner .map_review .review_bx .review_txt ul li a div{border-bottom: 1px solid #eaeaea; padding: 10px 0;}
+.main_inner .map_review .review_bx .review_txt ul li:last-child a div:last-child{border: none;}
+.main_inner .map_review .review_bx .review_txt ul li a div p{font-family: 'Pretendard'; width: 600px; overflow:hidden; text-overflow: ellipsis; white-space:nowrap ;}
+.main_inner .map_review .review_bx .review_txt ul li a div p:last-child{color: #999; margin-top: 5px;}
