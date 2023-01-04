@@ -7,14 +7,28 @@ import dent from '../images/icon/dent.svg'
 import derm from '../images/icon/derm.svg'
 import ears from '../images/icon/ears.svg'
 import eyes from '../images/icon/eyes.svg'
+import home from '../images/icon/home.svg'
 import han from '../images/icon/han.svg'
+import inner from '../images/icon/inner.svg'
+import mental_new from '../images/icon/mental_new.svg'
+import neuron from '../images/icon/neuron.svg'
+import nsurgery from '../images/icon/nsurgery.svg'
+import pee from '../images/icon/pee.svg'
+import plas from '../images/icon/plas.svg'
+import rehab from '../images/icon/rehab.svg'
+import sprint from '../images/icon/sprint.svg'
+import stun from '../images/icon/stun.svg'
+import surgery from '../images/icon/surgery.svg'
+import video from '../images/icon/video.svg'
+import women from '../images/icon/women.svg';
+
 
 
 const HomePage = () =>{
 
     return(
     <div id="wrap">
-    <header className="header">
+    {/* <header className="header">
         <div className="nav-wrap">
         <div className="logo">
         <a href="javascript:void(0)">
@@ -50,7 +64,7 @@ const HomePage = () =>{
         </ul>
       </div>
     </div>
-  </header>
+  </header> */}
   {/* main content */}
   <div className="main_content">
     <div className="swiper mySwiper main-slide">
@@ -94,11 +108,11 @@ const HomePage = () =>{
       </div>
       <div className="inner_grid_wrap">
         <div className="location_bx">
-          <img src="../images/icon/dent.svg" alt="" />
+          <img src={dent} alt="" />
           <h3>치과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/eyes.svg" alt="" />
+          <img src={eyes} alt="" />
           <h3>안과</h3>
         </div>
         <div className="location_bx">
@@ -106,47 +120,47 @@ const HomePage = () =>{
           <h3>피부과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/plas.svg" alt="" />
+          <img src={plas} alt="" />
           <h3>성형외과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/plas.svg" alt="" />
+          <img src={women} alt="" />
           <h3>산부인과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/mental_new.svg" alt="" />
+          <img src={mental_new} alt="" />
           <h3>정신의학과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/pee.svg" alt="" />
+          <img src={pee} alt="" />
           <h3>비뇨기과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/sprint.svg" alt="" />
+          <img src={sprint} alt="" />
           <h3>정형외과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/stun.svg" alt="" />
+          <img src={stun} alt="" />
           <h3>마취의학과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/nsurgery.svg" alt="" />
+          <img src={nsurgery}alt="" />
           <h3>신경외과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/rehab.svg" alt="" />
+          <img src={rehab} alt="" />
           <h3>재활의학과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/video.svg" alt="" />
+          <img src={video} alt="" />
           <h3>영상의학과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/surgery.svg" alt="" />
+          <img src={surgery} alt="" />
           <h3>외과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/neuron.svg" alt="" />
+          <img src={neuron} alt="" />
           <h3>신경과</h3>
         </div>
         <div className="location_bx">
@@ -154,7 +168,7 @@ const HomePage = () =>{
           <h3>소아과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/inner.svg" alt="" />
+          <img src={inner} alt="" />
           <h3>내과</h3>
         </div>
         <div className="location_bx">
@@ -162,11 +176,11 @@ const HomePage = () =>{
           <h3>이비인후과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/home.svg" alt="" />
+          <img src={home} alt="" />
           <h3>가정의학과</h3>
         </div>
         <div className="location_bx">
-          <img src="../resource/images/icon/han.svg" alt="" />
+          <img src={han} alt="" />
           <h3>한의원</h3>
         </div>
       </div>
@@ -254,7 +268,7 @@ const HomePage = () =>{
     </div>
   </div>
   {/* main content */}
-  <footer>
+  {/* <footer>
     <div className="footer_in">
       <div className="logo">
         <h1>FnDoc</h1>
@@ -296,7 +310,7 @@ const HomePage = () =>{
         </div>
       </div>
     </div>
-  </footer>
+  </footer> */}
 </div>
 
     )
