@@ -1,9 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import '../src/css/style.css';
 import React from 'react';
-import {useState} from 'react'
-import axios from 'axios';
 import {BrowserRouter as Router,Switch,Route, Link} from "react-router-dom";
 import NavBar from './components/NavBar';
 import routes from './routes';
@@ -16,8 +13,8 @@ function App() {
       <NavBar/>
       <div className='container'>
         <Switch>
-        {routes.map((route) => {
-            return <Route exact path={route.path} component={route.component} />;
+            {routes.map((route) => {
+            return <Route key={route.path} exact path={route.path} component={route.component}/>;
           })}
         </Switch>
       </div>

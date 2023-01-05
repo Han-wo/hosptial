@@ -1,7 +1,4 @@
 import React from 'react';
-import {useState} from 'react'
-import axios from 'axios';
-import {BrowserRouter as Router,Switch,Route, Link} from "react-router-dom";
 import child from '../images/icon/child.svg'
 import dent from '../images/icon/dent.svg'
 import derm from '../images/icon/derm.svg'
@@ -21,6 +18,7 @@ import stun from '../images/icon/stun.svg'
 import surgery from '../images/icon/surgery.svg'
 import video from '../images/icon/video.svg'
 import women from '../images/icon/women.svg';
+import '../css/style.css';
 
 
 
@@ -28,43 +26,6 @@ const HomePage = () =>{
 
     return(
     <div id="wrap">
-    {/* <header className="header">
-        <div className="nav-wrap">
-        <div className="logo">
-        <a href="javascript:void(0)">
-          <h1>
-            Fn<span style={{ color: "#A9A0FC" }}>D</span>oc
-          </h1>
-        </a>
-      </div>
-      <div className="nav">
-        <ul>
-          <li>
-            <Link href="javascript:void(0)">회사소개</Link>
-          </li>
-          <li>
-            <Link href="javascript:void(0)">리뷰쓰기</Link>
-          </li>
-          <li>
-            <Link href="javascript:void(0)">가격정보</Link>
-          </li>
-          <li>
-            <Link href="javascript:void(0)">건강정보</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="login">
-        <ul>
-          <li>
-            <Link href="javascript:void(0)">로그인</Link>
-          </li>
-          <li>
-            <Link href="javascript:void(0)">회원가입</Link>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header> */}
   {/* main content */}
   <div className="main_content">
     <div className="swiper mySwiper main-slide">

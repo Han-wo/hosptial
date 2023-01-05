@@ -2,6 +2,7 @@ import HomePage from './pages/HomePage';
 import CreatePage from './pages/CreatePage';
 import EditPage from './pages/EditPage';
 import MapPage from './pages/MapPage';
+import ListPage from './pages/ListPage';
 
 const routes = [
     {
@@ -9,16 +10,20 @@ const routes = [
       component:HomePage
   },
   {
-    path:'/Create',
+    path:'/hosp/create',
     component:CreatePage
   },
   {
-    path:'/Edit',
+    path:'/hosp/edit',
     component:EditPage
   },
   {
-    path:'/Map',
+    path:'/hosp/map',
     component:MapPage
+  },
+  {
+    path:'/hosp/list',
+    component:ListPage
   },
   ]
   
