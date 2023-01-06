@@ -3,7 +3,7 @@
 
 #wrap{display: flex; flex-direction: column; width: 100%; min-height: 100vh; position: relative;}
 /* nav type */
-nav{width: 100%; position:relative; top: 0; height: 73px; z-index: 9999; background-color: #ffff; transition: 0.3s;}
+nav{display:flex; width:100%; position:relative; top: 0; height: 73px; z-index: 9999; background-color: #ffff; transition: 0.3s;justify-content: space-around;}
 nav.on{border-bottom: 2px solid rgb(201, 201, 201);transition: 0.3s;}
 nav .nav-wrap{display: flex; justify-content: space-between; width: 100%; max-width: 1300px; margin: 0 auto; align-items: center; padding: 20px 0;}
 nav .nav-wrap .logo h1{ font-size: 38px; font-family: 'Montserrat';}

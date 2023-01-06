@@ -7,8 +7,7 @@ const CreatePage = () =>{
     const [title,setTitle] =useState('')
     const [Body,setBody] = useState('')
     const onsubmit = () =>{
-     
-      axios.post('http://localhost:3001/posts',{
+      axios.post('http://localhost:3004/post',{
         title: title,
         Body: Body
       })
