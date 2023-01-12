@@ -3,6 +3,8 @@ import CreatePage from './pages/CreatePage';
 import EditPage from './pages/EditPage';
 import MapPage from './pages/MapPage';
 import ListPage from './pages/ListPage';
+import LogIn from './pages/LogIn';
+import Register from './pages/Register';
 
 const routes = [
     {
@@ -24,6 +26,14 @@ const routes = [
   {
     path:'/hosp/list',
     component:ListPage
+  },
+  {
+    path:'/hosp/Log',
+    component:LogIn
+  },
+  {
+    path:'/hosp/Reg',
+    component:Register
   },
   ]
   

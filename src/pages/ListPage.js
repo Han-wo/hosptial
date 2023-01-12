@@ -8,6 +8,15 @@ import moment from 'moment'
 
 
 const ListPage = () =>{
+    const getPost = () =>{
+        axios.get('http://localhost:3004/posts').then((res) => {
+
+        })
+    }
+    getPost()
+    return(
+        <div></div>
+    )
  
 }
 

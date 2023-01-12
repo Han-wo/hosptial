@@ -33,10 +33,10 @@ const NavBar = () =>{
       <div className="login">
         <ul>
           <li>
-            <Link to="javascript:void(0)">로그인</Link>
+            <Link to="/hosp/Log">로그인</Link>
           </li>
           <li>
-            <Link to="javascript:void(0)">회원가입</Link>
+            <Link to="/hosp/Reg">회원가입</Link>
           </li>
         </ul>
       </div>
