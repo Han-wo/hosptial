@@ -7,7 +7,7 @@ import { Link , useNavigate, useLocation} from 'react-router-dom';
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;// 아이디에 들어갈 유효성 검사틀
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/; // 비밀번호에 들어갈 유효성검사틀
-const REGISTER_URL = '/register';
+
 
 const Register = () => {
     const userRef = useRef();
@@ -56,7 +56,10 @@ const Register = () => {
         }
         try {
             const response = await axios.post("http://localhost:3004/post",
-                JSON.stringify({ user, pwd }),
+                JSON.stringify({ 
+                    user, 
+                    pwd 
+                }),
                 {
                     headers: { 'Content-Type': 'application/json' },
                     withCredentials: true
@@ -88,7 +91,7 @@ const Register = () => {
                 <section>
                     <h1>회원가입 성공!</h1>
                     <p>
-                        <a href="#">로그인</a>
+                        <Link to="/hosp/log">로그인</Link>
                     </p>
                 </section>
             ) : (
@@ -173,7 +176,7 @@ const Register = () => {
                         이미 계정이 있습니까?<br />
                         <span className="line">
                             {/*put router link here*/}
-                            <a href='#'>로그인</a>
+                            <Link to='/hosp/Log'>로그인</Link>
                         </span>
                     </p>
                 </section>

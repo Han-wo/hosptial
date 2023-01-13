@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:content-box;
 }
 
 
@@ -81,6 +81,7 @@ button {
     background-color: rgb(6, 8, 8);
     color: rgb(214, 197, 197);
     padding: 0.5rem;
+    margin-top: 40px;
 }
 
 .instructions {

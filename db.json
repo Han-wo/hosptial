@@ -1,64 +1,44 @@
 {
   "post": [
     {
-      "title": "ㅎㅎㅎㅎㅎ",
-      "Body": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "user": "asdfga",
+      "pwd": "Asd1234!",
       "id": 1
     },
     {
-      "title": "안녕하세요",
-      "Body": "반가워요 잘 있어요 다시 만나요",
+      "user": "asdfga",
+      "pwd": "Asd1234!",
       "id": 2
     },
     {
-      "title": "안녕하세요",
-      "Body": "반가워요 잘 있어요 다시 만나요 ㅋㅋㅋㅋㅋㅋㅋ",
+      "user": "asdfga",
+      "pwd": "Asd1234!",
       "id": 3
     },
     {
-      "title": "zdz",
-      "Body": "dfzsg",
+      "user": "sgfsfs",
+      "pwd": "Asdf1234!",
       "id": 4
     },
     {
-      "user": "asdf",
-      "pwd": "Asdf1234",
+      "user": "afdsdf",
+      "pwd": "adasfsfd",
       "id": 5
     },
     {
-      "user": "asdf",
-      "pwd": "Asdf1234",
+      "user": "asffasf",
+      "pwd": "asfdasfsf",
       "id": 6
     },
     {
-      "user": "asdf",
-      "pwd": "Asdf1234",
+      "user": "asdfa",
+      "pwd": "Asdf123!",
       "id": 7
     },
     {
-      "user": "asdf",
-      "pwd": "Asdf1234",
+      "user": "asdfa",
+      "pwd": "Asdf123!",
       "id": 8
-    },
-    {
-      "user": "asdf",
-      "pwd": "Asdf1234",
-      "id": 9
-    },
-    {
-      "user": "asdf",
-      "pwd": "Asdf1234",
-      "id": 10
-    },
-    {
-      "user": "asdf",
-      "pwd": "Asdf1234",
-      "id": 11
-    },
-    {
-      "user": "asdfadf",
-      "pwd": "Asdf1234",
-      "id": 12
     }
   ]
 }

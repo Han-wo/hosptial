@@ -1,10 +1,11 @@
 import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from "../context/AuthProvider";
-import axios from 'axios';
+import axios from '../api/axios';
 import Register from './Register';
+import { Link } from 'react-router-dom';
 
 
-const LOGIN_URL = '/auth';
+
 
 const LogIn = () => {
     const { setAuth } = useContext(AuthContext);
@@ -26,21 +27,27 @@ const LogIn = () => {
 
     useEffect(() => {
         setErrMsg('');
-    }, [user, pwd])
+    }, [
+        user, 
+        pwd
+    ])
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         try {
             const response = await axios.post('http://localhost:3004/post',
-                JSON.stringify({ user, pwd }),
+                JSON.stringify({
+                     user, 
+                     pwd 
+                    }),
                 {
                     headers: { 'Content-Type': 'application/json' },
                     withCredentials: true
                 }
             );
             console.log(JSON.stringify(response?.data));
-            //console.log(JSON.stringify(response));
+            console.log(JSON.stringify(response));
             const accessToken = response?.data?.accessToken;
             const roles = response?.data?.roles;
             setAuth({ user, pwd, roles, accessToken });
@@ -69,10 +76,8 @@ const LogIn = () => {
             {success ? (
                 <section>
                     <h1 margin-bottom ='30px'>로그인 성공!</h1>
-                    <br />
-                    <p>
-                        <a href="#">홈으로 이동</a>
-                    </p>
+                    <br/>
+                    <p><Link to='/'>홈으로 이동</Link></p>
                 </section>
             ) : (
                 <section>
@@ -104,7 +109,7 @@ const LogIn = () => {
                         계정을 만드시겠습니까?<br />
                         <span className="line">
                             {/*put router link here*/}
-                            <a href="#">회원가입</a>
+                            <Link to='/hosp/Reg'>회원가입</Link>
                         </span>
                     </p>
                 </section>

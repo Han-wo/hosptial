@@ -19,6 +19,10 @@ import surgery from '../images/icon/surgery.svg'
 import video from '../images/icon/video.svg'
 import women from '../images/icon/women.svg';
 import '../css/style.css';
+import { Link } from 'react-router-dom';
+import {Swiper, SwiperSilde, SwiperSlide} from 'swiper/react';
+import '../css/swiper.min.css'
+import '../css/swiper-bundle.min.css'
 
 
 
@@ -35,11 +39,11 @@ const HomePage = () =>{
             <div className="slide_txt">
               <h2>모두에게 필요한</h2>
               <h1>병원정보</h1>
-              <a href="javascript:void(0)">찾아보기</a>
+              <Link to="/hosp/List">찾아보기</Link>
             </div>
           </div>
         </div>
-        <div className="swiper-slide">
+        {/* <div className="swiper-slide">
           <div className="slide_img img2">
             <div className="slide_txt">
               <h2>모두에게 필요한</h2>
@@ -56,7 +60,7 @@ const HomePage = () =>{
               <a href="javascript:void(0)">찾아보기</a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="swiper-pagination" />
     </div>
