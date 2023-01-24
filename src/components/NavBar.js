@@ -17,7 +17,7 @@ const NavBar = () =>{
       <div className="nav">
         <ul>
           <li>
-            <Link to="javascript:void(0)">회사소개</Link>
+            <Link to="#">회사소개</Link>
           </li>
           <li>
             <Link to="/hosp/create">리뷰쓰기</Link>
@@ -26,7 +26,7 @@ const NavBar = () =>{
             <Link to="/hosp/list">리뷰보기</Link>
           </li>
           <li>
-            <Link to="javascript:void(0)">건강정보</Link>
+            <Link to="/hosp/Map">건강정보</Link>
           </li>
         </ul>
       </div>

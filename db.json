@@ -1,44 +1,19 @@
 {
   "post": [
     {
-      "user": "asdfga",
-      "pwd": "Asd1234!",
+      "user": "asdf",
+      "pwd": "Asdf123!",
       "id": 1
     },
     {
-      "user": "asdfga",
-      "pwd": "Asd1234!",
+      "user": "asdf",
+      "pwd": "Asdf123!",
       "id": 2
     },
     {
-      "user": "asdfga",
-      "pwd": "Asd1234!",
+      "user": "asdf",
+      "pwd": "Asdf123!",
       "id": 3
-    },
-    {
-      "user": "sgfsfs",
-      "pwd": "Asdf1234!",
-      "id": 4
-    },
-    {
-      "user": "afdsdf",
-      "pwd": "adasfsfd",
-      "id": 5
-    },
-    {
-      "user": "asffasf",
-      "pwd": "asfdasfsf",
-      "id": 6
-    },
-    {
-      "user": "asdfa",
-      "pwd": "Asdf123!",
-      "id": 7
-    },
-    {
-      "user": "asdfa",
-      "pwd": "Asdf123!",
-      "id": 8
     }
   ]
 }

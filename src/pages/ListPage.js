@@ -8,12 +8,15 @@ import moment from 'moment'
 
 
 const ListPage = () =>{
+    const [post,setPost] = useState([])
     const getPost = () =>{
         axios.get('http://localhost:3004/posts').then((res) => {
+            setPost(res.data)
 
         })
     }
     getPost()
+    
     return(
         <div></div>
     )

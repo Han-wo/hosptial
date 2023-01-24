@@ -29,17 +29,17 @@ const Footer = () =>{
         <div className="sns">
           <ul>
             <li>
-              <a href="javascript:void(0)">
+              <a href="#">
                 <i className="fa-brands fa-twitter" />
               </a>
             </li>
             <li>
-              <a href="javascript:void(0)">
+              <a href="#">
                 <i className="fa-brands fa-facebook-f" />
               </a>
             </li>
             <li>
-              <a href="javascript:void(0)">
+              <a href="#">
                 <i className="fa-brands fa-instagram" />
               </a>
             </li>

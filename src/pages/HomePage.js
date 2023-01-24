@@ -20,7 +20,6 @@ import video from '../images/icon/video.svg'
 import women from '../images/icon/women.svg';
 import '../css/style.css';
 import { Link } from 'react-router-dom';
-import {Swiper, SwiperSilde, SwiperSlide} from 'swiper/react';
 import '../css/swiper.min.css'
 import '../css/swiper-bundle.min.css'
 
@@ -164,14 +163,14 @@ const HomePage = () =>{
         <div className="review_bx">
           <div className="review_tit">
             <h2>게시판</h2>
-            <a href="javascript:void(0)">
+            <a href="#">
               <i className="fa-solid fa-plus" />
             </a>
           </div>
           <div className="review_txt">
             <ul className="review">
               <li>
-                <a href="javascript:void(0)">
+                <a href="#">
                   <div>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -185,7 +184,7 @@ const HomePage = () =>{
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)">
+                <a href="#">
                   <div>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -199,7 +198,7 @@ const HomePage = () =>{
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)">
+                <a href="#">
                   <div>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -213,7 +212,7 @@ const HomePage = () =>{
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)">
+                <a href="#">
                   <div>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.

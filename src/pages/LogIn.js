@@ -36,7 +36,7 @@ const LogIn = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:3004/post',
+            const response = await axios.get('http://localhost:3004/User',
                 JSON.stringify({
                      user, 
                      pwd 
