@@ -3,15 +3,15 @@
 
 #wrap{display: flex; flex-direction: column; width: 100%; min-height: 100vh; position: relative;}
 /* nav type */
-nav{display:flex; width:100%; position:relative; top: 0; height: 73px; z-index: 9999; background-color:rgba(251, 252, 252, 0.952); transition: 0.3s;justify-content: space-around; margin-bottom: 5px;}
+nav{display:flex; width:100%; position:relative; top: 0; height: 73px; z-index: 9999; background-color:rgba(255, 255, 255, 0.952); transition: 0.3s;justify-content: space-around; margin-bottom: 5px;}
 nav.on{border-bottom: 2px solid rgb(226, 201, 201);transition: 0.3s;}
 nav .nav-wrap{display: flex; justify-content: space-between; width: 100%; max-width: 1300px; margin: 0 auto; align-items: center; padding: 20px 0;}
-nav .nav-wrap .logo h1{ font-size: 38px; font-family: 'Montserrat';}
+nav .nav-wrap .logo h1{ font-size: 38px; font-family: 'Montserrat'; margin-top: 30px;}
 
-nav .nav ul{display: flex; align-items: center;}
-nav .nav ul li a{padding: 35px; font-size: 17px; font-family: 'Pretendard'; font-weight: 600; transition: 0.3s;}
-nav .login ul{display: flex;}
-nav .login ul li a{ padding: 10px; font-size: 14px; font-family: 'Pretendard';}
+nav .nav2 ul{display: flex; align-items: center;}
+nav .nav2 ul li a{padding: 35px; font-size: 17px; font-family: 'Pretendard'; font-weight: 600; transition: 0.3s;}
+nav .login2 ul{display: flex;}
+nav .login2 ul li a{ padding: 10px; font-size: 14px; font-family: 'Pretendard';}
 nav ul li:hover a{color:#A9A0FC}
 
 /* footer */
@@ -72,3 +72,79 @@ footer .footer_in .information li:last-child a{border: none;}
 .main_inner .map_review .review_bx .review_txt ul li a div p{font-family: 'Pretendard'; width: 600px; overflow:hidden; text-overflow: ellipsis; white-space:nowrap ;}
 .main_inner .map_review .review_bx .review_txt ul li a div p:last-child{color: #999; margin-top: 5px;}
 
+
+/* ListPage */
+.main_inner.list_wrap{display: flex; position: relative;margin-left: 250px;}
+.main_inner.list_wrap .inner_tit{justify-content: center; margin-bottom: 20px;}
+.main_inner.list_wrap .inner_tit h1{font-weight: 500; font-size: 30px; letter-spacing: 4px;  font-family: 'Montserrat';}
+.main_inner.list_wrap .listdetail_wrap{border-top: 2px solid #000; border-bottom: 2px solid #000;}
+.main_inner.list_wrap .hospital_wrap{position: relative; width: 200px; margin-right: 60px;}
+.main_inner.list_wrap .hospital_list { position: sticky; top: 100px;  width: 200px;  padding: 20px; border: 1px solid #eaeaea;}
+.main_inner.list_wrap .hospital_list h2{font-family: 'Pretendard'; }
+.main_inner.list_wrap .hospital_list ul li{margin-top: 15px;}
+.main_inner.list_wrap .hospital_list ul li.active{color: #A9A0FC;}
+.main_inner.list_wrap .hospital_list ul li a{ font-family: 'Pretendard'; font-size: 18px;}
+.main_inner.list_wrap .list_inner{width: calc(100% - 200px);}
+.main_inner.list_wrap .list_inner .listdetail_wrap{padding: 10px;}
+.main_inner.list_wrap .list_inner .listdetail_wrap .list_bx{padding: 20px; border-bottom: 1px solid #eaeaea; font-family: 'Pretendard';}
+.main_inner.list_wrap .list_inner .listdetail_wrap .list_bx:last-child{border: none;}
+.main_inner.list_wrap .list_inner .listdetail_wrap .list_bx h2{font-size: 27px; width: 500px; overflow:hidden; text-overflow: ellipsis; white-space:nowrap ;}
+.main_inner.list_wrap .list_inner .listdetail_wrap .list_bx p.content{ font-size: 17px; margin-top: 10px; width: 800px; overflow:hidden; text-overflow: ellipsis; white-space:nowrap ;}
+.main_inner.list_wrap .list_inner .listdetail_wrap .list_bx p.date{ font-size: 15px; font-family: 'Montserrat'; margin-top: 10px; color: #999; font-weight: 600;}
+.main_inner.list_wrap .list_inner .pagenation{display: flex; justify-content: center; align-items: center;}
+.main_inner.list_wrap .list_inner .pagenation .arrow{margin: 0 15px; cursor: pointer;}
+.main_inner.list_wrap .list_inner .pagenation #numbers{display: flex;}
+.main_inner.list_wrap .list_inner .pagenation #numbers li{margin:0 15px; font-family: 'Montserrat';}
+.main_inner.list_wrap .list_inner .pagenation #numbers li.active{color: #4a39e4;}
+.main_inner.list_wrap .list_inner .btn_wrap{margin-top: 10px; display: flex; justify-content: flex-end;}
+.main_inner.list_wrap .list_inner .btn_wrap button{padding: 12px 30px; border: 1px solid #575555; transition: 0.3s; font-family: 'Pretendard'; font-size: 14px; background-color: #ffffff;}
+.main_inner.list_wrap .list_inner .btn_wrap button:hover{background-color: #A9A0FC; border: 1px solid #A9A0FC; color: #fff; }
+
+/* login */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+
+ul,li{list-style:none;}
+input::-webkit-input-placeholder{color:#b5b5b5; font-size:12px; line-height:100%;}
+input:focus { border: 1px solid #727272;}
+html,body,h1,h2,h3,h4,h5,h6,div,ul,li,label,form,input,button {margin:0;padding:0;}
+body{background:#fff; min-width:320px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
+body,input,button {border:none;font-size:12px; font-family:'Noto Sans KR', sans-serif;color:#727272;}
+label,img,input,button{vertical-align:middle;}
+input[type=text1],
+input[id=password1],
+input[type=email] { height:30px; font-size:13px; color:#373737; border:1px solid #e9e9e9; background:#fff; transition: all 0.5s; vertical-align:middle;}
+{background:#eaeaea; border-color:#c0c0c0; color:#666; -webkit-appearance:none;font-size:12px;}
+
+.login {
+    margin-left: 57px;
+    width: 410px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*border: 1px solid red;*/
+} 
+.login h2 {padding:0 0 20px; font-size: 40px; color:rgb(168,161,248); border-bottom: 2px solid rgb(193, 137, 239); text-align: center;}
+
+.login > ul { padding: 40px 0 10px;}
+.login > ul li { padding: 0 0 12px;}
+
+.login > ul li { padding: 0 0 12px; }
+.login > ul li input { width: 100%; height: 46px; box-sizing: border-box; text-indent: 16px;}
+.login > ul li input::-webkit-input-placeholder { font-size: 16px; color: rgb(184, 184, 184); text-indent: 16px;}
+.login > ul li input:focus { outline-color: #c873f6;}
+
+
+
+.login > ul li input[type="checkbox"] { position:absolute; left: -3000%; }
+.login > ul li input[type="checkbox"]+label { height: 36px; line-height: 36px;}
+.login > ul li input[type="checkbox"]+label:before { content:""; display: inline-block; width: 18px; height: 18px; border: 1px solid #666; background-color: #fff; vertical-align: -5px; margin:0 10px 0 0;}
+.login > ul li input[type="checkbox"]:checked + label:before { background: url(../images/icon/ico_check_on.png) no-repeat center #333; border-color: #333;} 
+
+.login button{ width:98%; height: 28px; line-height: 1px; background:#c873f6; font-size: 17px; color:#fff; text-align: center;}
+.login button:hover { cursor:pointer;}
+
+.login div ul {display: flex; justify-content: center;}
+.login div ul li {position: relative; padding: 0 18px;}
+.login div ul li ~ li :before { content: ""; position:absolute; height:13px; width: 1px; background: rgb(132, 132, 132); left:0; top: 4px;}
+.login div ul li a {font-size: 13px; color:rgb(70, 70, 70)}

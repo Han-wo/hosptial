@@ -61,7 +61,7 @@ const HomePage = () =>{
           </div>
         </div> */}
       </div>
-      <div className="swiper-pagination" />
+      <div className="swiper-pagination"/>
     </div>
     <div className="main_inner">
       <div className="inner_tit">

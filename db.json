@@ -1,19 +1,5 @@
 {
   "post": [
-    {
-      "user": "asdf",
-      "pwd": "Asdf123!",
-      "id": 1
-    },
-    {
-      "user": "asdf",
-      "pwd": "Asdf123!",
-      "id": 2
-    },
-    {
-      "user": "asdf",
-      "pwd": "Asdf123!",
-      "id": 3
-    }
+
   ]
 }

@@ -73,7 +73,7 @@ a{ -webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.1s ease-in-ou
 .clearfix:after{content:''; display:block; clear:both;}
 
 /*** Form ***/
-fieldset{border:0}
+/* fieldset{border:0}
 input,
 textarea{ border:#d5d5d5 1px solid; padding:10px 10px; font-size:16px; border-radius:0; -webkit-border-radius:0; font-family: 'Noto Sans KR', Arial, sans-serif;}
 input[type=text],
@@ -146,7 +146,7 @@ input[type=radio] + label::before{content:""; display:inline-block; width:18px; 
 
 input[type=radio], input[type=checkbox]{margin-right:4px;}
 input[type=radio] + label,
-input[type=checkbox] + label{position:relative; margin-bottom:0; margin-right:30px; vertical-align: middle; font-size:16px; color:#000;}
+input[type=checkbox] + label{position:relative; margin-bottom:0; margin-right:30px; vertical-align: middle; font-size:16px; color:#000;} */
 
 /* margin, padding */
 .mg0{margin:0 !important;}

@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import '../src/css/style.css';
 import React from 'react';
 import {BrowserRouter as Router,Switch,Route, Link} from "react-router-dom";
@@ -6,6 +6,10 @@ import NavBar from './components/NavBar';
 import routes from './routes';
 import Footer from './components/Footer';
 import '../src/css/index.css'
+// import '../src/css/common.css'
+import '../src/css/fonts.css'
+
+
 
 
 function App() {

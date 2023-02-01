@@ -3,6 +3,7 @@ import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from '../api/axios';
 import { Link , useNavigate, useLocation} from 'react-router-dom';
+// import '../css/index.css'
 
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;// 아이디에 들어갈 유효성 검사틀
@@ -99,7 +100,7 @@ const Register = () => {
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
                     <h1>회원가입</h1>
                     <form onSubmit={handleSubmit}>
-                        <label htmlFor="username">
+                        <label htmlFor="username" className='Regster'>
                             아이디:
                             <FontAwesomeIcon icon={faCheck} className={validName ? "valid" : "hide"} />
                             <FontAwesomeIcon icon={faTimes} className={validName || !user ? "hide" : "invalid"} />
@@ -170,7 +171,7 @@ const Register = () => {
                             위의 비밀번호와 같아야합니다.
                         </p>
 
-                        <button disabled={!validName || !validPwd || !validMatch ? true : false}>회원가입</button>
+                        <button disabled={!validName || !validPwd || !validMatch ? true : false} className='btn2'>회원가입</button>
                     </form>
                     <p>
                         이미 계정이 있습니까?<br />

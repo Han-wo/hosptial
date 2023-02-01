@@ -1,8 +1,9 @@
 import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from "../context/AuthProvider";
 import axios from '../api/axios';
-import Register from './Register';
 import { Link } from 'react-router-dom';
+
+
 
 
 
@@ -82,40 +83,102 @@ const LogIn = () => {
             ) : (
                 <section>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                    <h1>로그인</h1>
-                    <form onSubmit={handleSubmit}>
-                        <label htmlFor="username">아이디:</label>
-                        <input
-                            type="text"
-                            id="username"
-                            ref={userRef}
-                            autoComplete="off"
-                            onChange={(e) => setUser(e.target.value)}
-                            value={user}
-                            required
-                        />
-
-                        <label htmlFor="password">비밀번호:</label>
-                        <input
-                            type="password"
-                            id="password"
-                            onChange={(e) => setPwd(e.target.value)}
-                            value={pwd}
-                            required
-                        />
-                        <button>로그인</button>
-                    </form>
-                    <p>
-                        계정을 만드시겠습니까?<br />
-                        <span className="line">
-                            {/*put router link here*/}
-                            <Link to='/hosp/Reg'>회원가입</Link>
-                        </span>
-                    </p>
+                
+                    <form className='login' onSubmit={handleSubmit}>
+                        <h2>FnDoc</h2>
+                            <ul>
+                            <li>
+                                <input
+                                onChange={(e) => setUser(e.target.value)}
+                                type="text1"
+                                placeholder="아이디"
+                                id="id"
+                                ref={userRef}
+                                className="account"
+                                title="아이디입력"
+                                value={user}
+                                required
+                                />
+                            </li>
+                            <li>
+                                <input
+                                onChange={(e) => setPwd(e.target.value)}
+                                type="password"
+                                placeholder="비밀번호"
+                                id="password1"
+                                className="account"
+                                title="비밀번호입력"
+                                value={pwd}
+                                required
+                                />
+                            </li>
+                            <li>
+                                <input type="checkbox" id="chk_id" />
+                                <label htmlFor="chk_id">아이디저장</label>
+                            </li>
+                            <li>
+                                <button id="login_btn" className="account">
+                                        로그인
+                                </button>
+                            </li>
+                            </ul>
+                            <div>
+                            <ul>
+                                <li>
+                                <Link to="/hosp/Reg">회원가입</Link>
+                                </li>
+                                <li>
+                                <a href="">아이디 찾기</a>
+                                </li>
+                                <li>
+                                <a href="">비밀번호 찾기</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </form>
+                            
+                        
+                  
                 </section>
             )}
         </>
     )
 }
 
+
 export default LogIn
+
+
+
+
+
+{/* <h1>로그인</h1>
+                    
+                    <label htmlFor="username">아이디:</label>
+                    <input
+                        type="text"
+                        id="username"
+                        ref={userRef}
+                        autoComplete="off"
+                        onChange={(e) => setUser(e.target.value)}
+                        value={user}
+                        required
+                    />
+
+                    <label htmlFor="password">비밀번호:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        onChange={(e) => setPwd(e.target.value)}
+                        value={pwd}
+                        required
+                    />
+                    <button>로그인</button>
+                </form>
+                <p>
+                    계정을 만드시겠습니까?<br />
+                    <span className="line">
+                      
+                        <Link to='/hosp/Reg'>회원가입</Link>
+                    </span>
+                </p>  */}
