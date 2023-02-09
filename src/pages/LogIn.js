@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from "../context/AuthProvider";
-import axios from '../api/axios';
+import axios from '../lib/api/axios';
 import { Link } from 'react-router-dom';
 
 
@@ -37,10 +37,10 @@ const LogIn = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.get('http://localhost:3004/User',
+            const response = await axios.get('http://localhost:3001/post',
                 JSON.stringify({
-                     user, 
-                     pwd 
+                     user : user, 
+                     pwd : pwd
                     }),
                 {
                     headers: { 'Content-Type': 'application/json' },

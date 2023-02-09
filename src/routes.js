@@ -5,7 +5,7 @@ import EditPage from './pages/EditPage';
 import ListPage from './pages/ListPage';
 import LogIn from './pages/LogIn';
 import Register from './pages/Register';
-import MapComponent from './components/views/Landing/Section/MapComponent';
+
 import Landing from './components/views/Landing/Landing';
 
 const routes = [

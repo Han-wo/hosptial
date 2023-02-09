@@ -174,10 +174,7 @@ const HomePage = () =>{
                   <div>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Sequi ducimus quod expedita nihil sed, illum repellendus
-                      obcaecati incidunt, cumque itaque quia quibusdam eaque
-                      magnam assumenda? Fugit neque iusto aspernatur!
-                      Asperiores!
+                   
                     </p>
                     <p>2022.12.30</p>
                   </div>
@@ -188,10 +185,7 @@ const HomePage = () =>{
                   <div>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Sequi ducimus quod expedita nihil sed, illum repellendus
-                      obcaecati incidunt, cumque itaque quia quibusdam eaque
-                      magnam assumenda? Fugit neque iusto aspernatur!
-                      Asperiores!
+               
                     </p>
                     <p>2022.12.30</p>
                   </div>
@@ -202,10 +196,7 @@ const HomePage = () =>{
                   <div>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Sequi ducimus quod expedita nihil sed, illum repellendus
-                      obcaecati incidunt, cumque itaque quia quibusdam eaque
-                      magnam assumenda? Fugit neque iusto aspernatur!
-                      Asperiores!
+                 
                     </p>
                     <p>2022.12.30</p>
                   </div>
@@ -216,10 +207,7 @@ const HomePage = () =>{
                   <div>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Sequi ducimus quod expedita nihil sed, illum repellendus
-                      obcaecati incidunt, cumque itaque quia quibusdam eaque
-                      magnam assumenda? Fugit neque iusto aspernatur!
-                      Asperiores!
+              
                     </p>
                     <p>2022.12.30</p>
                   </div>

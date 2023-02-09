@@ -148,3 +148,9 @@ input[type=email] { height:30px; font-size:13px; color:#373737; border:1px solid
 .login div ul li {position: relative; padding: 0 18px;}
 .login div ul li ~ li :before { content: ""; position:absolute; height:13px; width: 1px; background: rgb(132, 132, 132); left:0; top: 4px;}
 .login div ul li a {font-size: 13px; color:rgb(70, 70, 70)}
+
+/*review*/
+.form-group { margin-left: 830px; font-size: 25px; margin-top:-90px;}
+
+
+

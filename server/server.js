@@ -24,6 +24,6 @@ server.delete("/post/completed", (req, res) => {
 // Use default router
 server.use(router);
 
-server.listen(5000, () => {
+server.listen(3000, () => {
   console.log("JSON Server is running");
 });

@@ -26,7 +26,7 @@ const NavBar = () =>{
             <Link to="/hosp/list">리뷰보기</Link>
           </li>
           <li>
-            <Link to="">건강정보</Link>
+            <Link to="hosp/Map">건강정보</Link>
           </li>
         </ul>
       </div>

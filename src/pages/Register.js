@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import axios from '../api/axios';
+import axios from '../lib/api/axios';
 import { Link , useNavigate, useLocation} from 'react-router-dom';
 // import '../css/index.css'
 
@@ -56,7 +56,7 @@ const Register = () => {
             return;
         }
         try {
-            const response = await axios.post("http://localhost:3004/post",
+            const response = await axios.post("http://localhost:3001/User",
                 JSON.stringify({ 
                     user, 
                     pwd 
