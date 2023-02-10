@@ -1,24 +1,20 @@
 import React from 'react';
-import {useState} from 'react'
-import axios from 'axios';
-import Editor from '../components/Write/Editor';
 import Responsive from '../components/common/Responsive';
-import WriteButton from '../components/Write/WriteButton';
-import EditorContainer from '../container/write/EditorContainer';
+import Editor from '../components/Write/Editor';
 
 
-const CreatePage = () =>{
-  return(
+
+
+
+const CreatePage = () => {
+  return (
     <div>
       <Responsive>
         <Editor/>
-        <WriteButton/>  
       </Responsive>
     </div>
-  )
-    
+  );
 };
-
 
 export default CreatePage;
 

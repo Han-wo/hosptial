@@ -1,6 +1,4 @@
 import React from 'react';
-import {useState} from 'react'
-import axios from 'axios';
 import {BrowserRouter as Router,Switch,Route,Link,NavLink} from "react-router-dom";
 
 const NavBar = () =>{
@@ -26,7 +24,7 @@ const NavBar = () =>{
             <Link to="/hosp/list">리뷰보기</Link>
           </li>
           <li>
-            <Link to="hosp/Map">건강정보</Link>
+            <Link to="/hosp/Map">건강정보</Link>
           </li>
         </ul>
       </div>

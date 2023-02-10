@@ -1,143 +1,65 @@
-
-import React from 'react';
-import {useState , useEffect} from 'react'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
-
-
-
-const ListPage = () => {
-    const [posts,setPosts] = useState([])
-    const getPosts = () =>{
-        axios.get('http://localhost:3001/posts').then((res) => {
-          console.log(res)
-            // setPosts(res.data)
-
-        })
-    }
-
-    getPosts();
-    // useEffect(() => {
-    //     getPosts()
-    // },[])
-
-    return (
-      <div>
-        <h1>리뷰모음</h1>
-        {posts.map(post => {
-          return(
-            <div>{post.title}</div>
-          )
-        })}
-      </div>
-    )
+const ReviewBoard = () => {
+  const [reviews, setReviews] = useState([]);
 
  
-}
 
-export default ListPage;
+  useEffect(() => {
+    axios
+      .get('http://localhost:3004/post')
+      .then((response) => {
+        setReviews(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
 
-    // return(
-    //     <div className="main_content">
-    //     <div className="main_inner list_wrap">
-    //       <div className="list_inner">
-    //         <div className="inner_tit">
-    //           <h1>리뷰</h1>
-    //           {posts.map(post => {
-    //             return(
-    //             <div key={post.id}>{post.title}</div>
-                
-    //             )
-    //           })}
-    //           <div className="input_wrap">
-    //             <input className="noborder" type="text" placeholder="검색하기" />
-    //             <i className="fa-solid fa-magnifying-glass" />
-    //           </div>
-    //         </div>
-    //         <div className="listdetail_wrap">
+  const handleReviewTitleClick = (review) => {
+  const updatedReview = { ...review, viewCount: review.viewCount + 1 };
+  axios
+  .put(`https://localhost:3004/post ${review.id}`, updatedReview)
+  .then((response) => {
+    const updatedReviews = reviews.map((r) =>
+      r.id === review.id ? updatedReview : r
+    );
+    setReviews(updatedReviews);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+};
 
-    //           <div className="list_bx">
-    //             <h2>제목</h2>
-    //             <p className="content">
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-    //             </p>
-    //             <p className="date">2022.12.30</p>
-    //           </div>
-    //           <div className="list_bx">
-    //             <h2>제목</h2>
-    //             <p className="content">
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-    //             </p>
-    //             <p className="date">2022.12.30</p>
-    //           </div>
-    //           <div className="list_bx">
-    //             <h2>제목</h2>
-    //             <p className="content">
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-    //             </p>
-    //             <p className="date">2022.12.30</p>
-    //           </div>
-    //           <div className="list_bx">
-    //             <h2>제목</h2>
-    //             <p className="content">
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-            
-    //             </p>
-    //             <p className="date">2022.12.30</p>
-    //           </div>
-    //           <div className="list_bx">
-    //             <h2>제목</h2>
-    //             <p className="content">
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-              
-    //             </p>
-    //             <p className="date">2022.12.30</p>
-    //           </div>
-    //           <div className="list_bx">
-    //             <h2>제목</h2>
-    //             <p className="content">
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-                 
-    //             </p>
-    //             <p className="date">2022.12.30</p>
-    //           </div>
-    //           <div className="list_bx">
-    //             <h2>제목</h2>
-    //             <p className="content">
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-               
-    //             </p>
-    //             <p className="date">2022.12.30</p>
-    //           </div>
-    //           <div className="list_bx">
-    //             <h2>제목</h2>
-    //             <p className="content">
-    //               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-    //         .
-    //             </p>
-    //             <p className="date">2022.12.30</p>
-    //           </div>
-    //         </div>
-    //         <div className="btn_wrap">
-    //           <button className='write_btn'><Link to ="/hosp/create">글쓰기</Link></button>
-    //         </div>
-    //         <div className="pagenation">
-    //           <i className="fa-solid fa-chevron-left arrow" />
-    //           <ol id="numbers">
-    //             <li className="active">
-    //               <a href="">1</a>
-    //             </li>
-    //             <li>
-    //               <a href="">2</a>
-    //             </li>
-    //             <li>
-    //               <a href="">3</a>
-    //             </li>
-    //           </ol>
-    //           <i className="fa-solid fa-chevron-right arrow" />
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // )
+
+  return (
+    <div className="review-board">
+      <table className="review-table">
+        <thead>
+          <tr>
+            <th className="review-table-header">번호</th>
+            <th className="review-table-header">제목</th>
+            <th className="review-table-header">조회수</th>
+            <th className="review-table-header">별점</th>
+          </tr>
+        </thead>
+        <tbody>
+          {reviews.map((review, index) => (
+            <tr key={review.id} className="review-table-row">
+              <td className="review-table-cell">{index + 1}</td>
+              <td className="review-table-cell">
+                <Link to ='/hosp/detail/${review.id}' onClick={() => handleReviewTitleClick(review)}>{review.title}</Link></td>
+              <td className="review-table-cell">{review.viewCount}</td>
+              <td className="review-table-cell">{review.rating}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default ReviewBoard;

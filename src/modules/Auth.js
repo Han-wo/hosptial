@@ -1,6 +1,12 @@
 import { createAction, handleActions } from 'redux-actions';
 // produce import
 import produce from 'immer';
+// takeLatest import
+
+// saga import
+
+// api import
+
 
 
 // // sample 액션 타입 정의
@@ -26,10 +32,27 @@ export const changeField = createAction(
 );
 
 export const initializeForm = createAction(INITIALIZE_FORM, form => form); 
+
+
+
+
+
+
+export function* authSaga(){
+  
+}
+
+
 // 초기 상태 정의
 const initialState = {
 
-}
+  auth:null,
+  authError:null,
+};
+
+
+
+
 // 리듀서 함수
 // 리듀서 함수도 더 간단하고 가독성 높게 사용하기 위해 handleActions 함수 사용
 // 리듀서 함수는 export default 로 
@@ -46,8 +69,10 @@ const auth = handleActions(
     // 얘는 오히려 immer 쓰면 복잡해지니까 spread 사용
       ...state,
       [form]: initialState[form],
+      authError:null, // 폼 전환 시 회원 인증 에러 초기화
       
     }),
+
   },
   initialState,
 );

@@ -3,9 +3,9 @@ import CreatePage from './pages/CreatePage';
 import EditPage from './pages/EditPage';
 
 import ListPage from './pages/ListPage';
-import LogIn from './pages/LogIn';
-import Register from './pages/Register';
-
+import LogIn from './pages/LogInPage';
+import Register from './pages/RegisterPage';
+import Detail from './pages/PostPage'
 import Landing from './components/views/Landing/Landing';
 
 const routes = [
@@ -41,6 +41,11 @@ const routes = [
   {
     path :'/hosp/Map',
     component:Landing
+  },
+  {
+    path : '/hosp/detail',
+    component: Detail
+
   }
   ]
   
