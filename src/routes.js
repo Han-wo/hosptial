@@ -5,8 +5,8 @@ import EditPage from './pages/EditPage';
 import ListPage from './pages/ListPage';
 import LogIn from './pages/LogInPage';
 import Register from './pages/RegisterPage';
-import Detail from './pages/PostPage'
-import Landing from './components/views/Landing/Landing';
+import ReviewDetail from './components/board/ReviewDetail'
+import Map from './components/Map/Map';
 
 const routes = [
     {
@@ -40,11 +40,11 @@ const routes = [
   ,
   {
     path :'/hosp/Map',
-    component:Landing
+    component:Map
   },
   {
     path : '/hosp/detail',
-    component: Detail
+    component: ReviewDetail
 
   }
   ]

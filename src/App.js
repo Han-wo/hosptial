@@ -12,10 +12,12 @@ import '../src/css/fonts.css'
 
 
 
+
 function App() {
   return(
     <Router>
       <NavBar/>
+     
       <div className='container'>
         <Switch>
             {routes.map((route) => {

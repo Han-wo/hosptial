@@ -1,57 +1,70 @@
 {
   "post": [
     {
-      "title": "ㅁㄴㅇㄻㄴㄹ",
-      "content": "<p>ㅁㅇㄴㄹㄴㄹㅇ</p>",
+      "title": "낭만닥터 김사부",
+      "content": "<p>ㅎㅇㅎㅇㅎㅇ</p>",
       "rating": 5,
+      "category": "외과",
+      "date": "2023-02-12T04:14:59.393Z",
       "id": 1
     },
     {
-      "title": "ㄴㅇㅀㄴㅇㅎ",
-      "content": "<p>ㄴㅇㅎㅇㅎㅇㅎ</p>",
-      "rating": 1,
+      "title": "내과내과",
+      "content": "<p>와 내과</p>",
+      "rating": 3,
+      "category": "내과",
+      "date": "2023-02-12T04:15:16.868Z",
       "id": 2
     },
     {
-      "title": "ㄴㅇ",
-      "content": "<p>ㄴㅇㅎㄴㅇㅎㅇㅎㄴㅇㅎㄴㅇㅎㄴㅇㅎㅇ</p>",
-      "rating": 5,
+      "title": "소아과는 소아가 가는곳",
+      "content": "<p>응애</p>",
+      "rating": 4,
+      "category": "소아과",
+      "date": "2023-02-12T04:15:32.687Z",
       "id": 3
     },
     {
-      "title": "제에에목",
-      "content": "<p>내애애애용</p>",
+      "title": "치과는 무서워",
+      "content": "<p>시발</p>",
       "rating": 3,
-      "createdAt": "2023-02-10T14:29:21.205Z",
+      "category": "치과",
+      "date": "2023-02-12T04:15:41.806Z",
       "id": 4
     },
+
     {
-      "title": "리이이이뷰",
-      "content": "<p>제에에에에에에목</p>",
-      "rating": 4,
-      "submissionDate": "",
-      "id": 5
-    },
-    {
-      "title": "리이이이ㅣ잉",
-      "content": "<p>뷰우우우우우우우</p>",
-      "rating": 1,
-      "date": "2023-02-10T14:36:48.053Z",
+      "title": "뼈가 아파요",
+      "content": "<p>시부레</p>",
+      "rating": 5,
+      "category": "정형외과",
+      "date": "2023-02-12T04:16:12.474Z",
       "id": 6
     },
+
     {
-      "title": "테에에스스스트트트",
-      "content": "<p>ㅁㄴㅇㄹㄴㅇㄹㄴㄹㄴㄹㄴㄹ</p>",
-      "rating": [],
-      "date": "2023-02-10T15:00:33.494Z",
-      "id": 7
+      "title": "산부인과",
+      "content": "<p>우왕</p>",
+      "rating": 5,
+      "category": "산부인과",
+      "date": "2023-02-12T04:16:40.083Z",
+      "id": 8
     },
     {
-      "title": "테테텥",
-      "content": "<p>ㅅ스스스트트트트</p>",
-      "rating": [],
-      "date": "2023-02-10T15:00:41.211Z",
-      "id": 8
+      "title": "앙 내과",
+      "content": "<p>병원은 싫어</p>",
+      "rating": 1,
+      "category": "내과",
+      "date": "2023-02-12T06:10:04.131Z",
+      "id": 9
+    },
+    {
+      "title": "삼내과",
+      "content": "<p>안내</p>",
+      "rating": 4,
+      "category": "내과",
+      "date": "2023-02-12T06:10:12.531Z",
+      "id": 10
     }
   ]
 }

@@ -3,11 +3,14 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import axios from 'axios';
 
+const categories = ['병원선택','외과', '치과', '내과','산부인과','정형외과','이비인후과','신경과','소아과'];
 
 const ReviewForm = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [rating, setRating] = useState(0);
+  const [category, setCategory] = useState(categories[0]);
+
 
 
   const handleTitleChange = (e) => {
@@ -20,6 +23,11 @@ const ReviewForm = () => {
 
   const handleRatingChange = (value) => {
     setRating(value);
+
+  };
+
+  const handleCategoryChange = (e) => {
+    setCategory(e.target.value);
   };
 
 
@@ -31,6 +39,7 @@ const ReviewForm = () => {
       title,
       content,
       rating,
+      category,
       date: new Date(),
       };
 
@@ -41,6 +50,7 @@ const ReviewForm = () => {
       setTitle('');
       setContent('');
       setRating(0);
+      setCategory("");
     })
     .catch((error) => {
       console.error(error);
@@ -66,15 +76,33 @@ const ReviewForm = () => {
     'link', 'image',
     'align', 'color', 'background',        
   ]
+
+
   
   return (
     <form className="review-form">
+      <div style={{marginTop: '10px',border:'0'}}>
+        <label htmlFor="category-select">병원목록:</label>
+        <select id="category-select" 
+          value={category} 
+          onChange={handleCategoryChange} 
+          style={{marginLeft: '10px'}}>
+
+          {categories.map((category) => (
+            <option 
+              key={category} 
+              value={category}>
+                {category}
+            </option>
+          ))}
+        </select>
+      </div>
       <input
         type="text"
         placeholder="제목을 적어 주세요.."
         value={title}
         onChange={handleTitleChange}
-        style={{ border: '0.3px solid',width: '80%', marginTop:'20px'}}
+        style={{ border: '0.3px solid',borderRadius:"0.05px" , width: '98.5%', marginTop:'20px'}}
       />
       <ReactQuill
         value={content}
@@ -97,6 +125,8 @@ const ReviewForm = () => {
             </span>
           ))}
         </div>
+
+ 
 
       <button
         type="primary"
